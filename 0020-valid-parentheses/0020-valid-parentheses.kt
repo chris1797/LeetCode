@@ -4,15 +4,16 @@ class Solution {
         val map = mapOf('(' to ')', '{' to '}', '[' to ']')
 
         for (char in s) {
-            if (map.containsKey(char)) { // 여는 괄호인 경우, stack에 해당 value를 추가
+            if (map.containsKey(char)) {
                 stack.add(map[char]!!)
             } else if (stack.isNotEmpty() && stack.last() == char) {
-                stack.removeAt(stack.size - 1)
+                stack.removeLast()
             } else {
                 return false
             }
         }
 
         return stack.isEmpty()
+
     }
 }
