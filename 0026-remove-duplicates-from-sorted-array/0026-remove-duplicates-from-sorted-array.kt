@@ -1,3 +1,10 @@
+/*
+
+전형적인 in-place 알고리즘 문제
+- 결과 반환을 위해 새로운 배열 생성 X
+- 기존 배열 내부에서만 값을 바꿔가며 해결해야 함
+
+*/
 class Solution {
     fun removeDuplicates(nums: IntArray): Int {
         if (nums.isEmpty()) return 0
