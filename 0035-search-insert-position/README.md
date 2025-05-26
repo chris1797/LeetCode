@@ -2,6 +2,8 @@
 
 <p>You must&nbsp;write an algorithm with&nbsp;<code>O(log n)</code> runtime complexity.</p>
 
+처음엔 for 반복문으로 구현했으나 문제에 시간복잡도 O(log n) 요구사항으로 개선 작업 진행.
+
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
