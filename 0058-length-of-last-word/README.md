@@ -2,6 +2,9 @@
 
 <p>A <strong>word</strong> is a maximal <span data-keyword="substring-nonempty">substring</span> consisting of non-space characters only.</p>
 
+- 처음엔 trim().split(" ") 으로 제출했다가 ai 확인 후 성능, 메모리 측면에서 개선 여지 확인함.
+- 결국 필요한 건 마지막 글자의 length, 즉 뒤에서부터 어떻게 계산할 것인가가 주요한 듯. 
+
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
