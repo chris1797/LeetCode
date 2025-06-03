@@ -3,7 +3,6 @@ class Solution {
         var idx = m + n - 1
         var mIdx = m - 1
         var nIdx = n - 1
-        var temp = 0
 
         while (nIdx >= 0) {
             if (mIdx >= 0 && nums1[mIdx] > nums2[nIdx]) {
