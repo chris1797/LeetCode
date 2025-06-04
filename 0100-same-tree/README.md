@@ -2,6 +2,12 @@
 
 <p>Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.</p>
 
+---
+
+<p>
+	p, q가 null이라는건 root node가 없다는 의미.
+</p>
+
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 <img alt="" src="https://assets.leetcode.com/uploads/2020/12/20/ex1.jpg" style="width: 622px; height: 182px;" />
