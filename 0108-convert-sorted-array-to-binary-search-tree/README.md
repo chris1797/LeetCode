@@ -1,5 +1,15 @@
 <h2><a href="https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree">108. Convert Sorted Array to Binary Search Tree</a></h2><h3>Easy</h3><hr><p>Given an integer array <code>nums</code> where the elements are sorted in <strong>ascending order</strong>, convert <em>it to a </em><span data-keyword="height-balanced"><strong><em>height-balanced</em></strong></span> <em>binary search tree</em>.</p>
 
+---
+
+<p>
+	매개변수 배열을 size/2 index를 기준으로 잘라 left, right 각각 반복문을 돌리기 보다는, 
+</p>
+<p>
+	array 범위(start, end)를 매개변수로 받는 support 함수를 만들고 그 안에서 left, right 각각을 root로 하는 node노드들을 재귀로 만드는 방식
+</p>
+
+---
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 <img alt="" src="https://assets.leetcode.com/uploads/2021/02/18/btree1.jpg" style="width: 302px; height: 222px;" />
