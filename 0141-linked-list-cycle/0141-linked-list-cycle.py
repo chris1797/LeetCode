@@ -5,14 +5,15 @@
 #         self.next = None
 
 class Solution:
+    # Floyd 알고리즘 적용 (토끼와 거북이)
     def hasCycle(self, head: Optional[ListNode]) -> bool:
-        visited = set()
-        node = head
+        slow = head
+        fast = head
 
-        while node:
-            if node in visited:
+        while fast and fast.next: # fast와 fast.next 체크
+            slow = slow.next
+            fast = fast.next.next
+            if slow is fast:
                 return True
-            visited.add(node)
-            node = node.next
 
         return False
